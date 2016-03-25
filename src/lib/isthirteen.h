@@ -15,5 +15,7 @@ extern bool IsThirteenGreaterThan(const size_t x);
 extern bool IsThirteenLessThan(const size_t);
 extern bool IsRoughlyThirteen(const float);
 extern bool IsThirteenWithin(const size_t, const size_t);
+extern bool IsThirteenPrime();
+extern bool IsThirteenTheNewBlack();
 
 #endif

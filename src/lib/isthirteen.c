@@ -1,5 +1,6 @@
 #include "isthirteen.h"
 #include "isthirteen_strings.h"
+#include "config.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <strings.h>
@@ -50,4 +51,20 @@ bool IsRoughlyThirteen(const float x) {
 
 bool IsThirteenWithin(const size_t x, const size_t y) {
   return THIRTEEN <= y && THIRTEEN >= x ? true : false;
+}
+
+bool IsThirteenPrime() {
+  if (THIRTEEN <= 1)
+    return false;
+
+  for (size_t i = 2; i * i <= THIRTEEN; i++) {
+    if (THIRTEEN % i == 0)
+      return false;
+  }
+
+  return true;
+}
+
+bool IsThirteenTheNewBlack() {
+  return true;
 }

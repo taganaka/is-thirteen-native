@@ -2,6 +2,7 @@
 #include <stdbool.h>
 #include <assert.h>
 #include "isthirteen.h"
+#include "config.h"
 static void test_IsThirteen(){
   assert(IsThirteen(130) == false);
   assert(IsThirteen(13) == true);
@@ -53,8 +54,16 @@ static void test_IsThirteenWithin() {
   assert(IsThirteenWithin(18, 1) == false);
 }
 
+static void test_IsThirteenPrime() {
+  assert(IsThirteenPrime());
+}
+
+static void test_IsThirteenTheNewBlack() {
+  assert(IsThirteenTheNewBlack() == true);
+}
+
 int main() {
-  printf("Welcome to IsThirteen Native library Unit test\n");
+  printf("Welcome to IsThirteen Native library Unit test (%s)\n", PACKAGE_STRING);
   test_IsThirteen();
   test_IsNotThirteen();
   test_IsThirteenString();
@@ -63,5 +72,7 @@ int main() {
   test_IsThirteenLessThan();
   test_IsRoughlyThirteen();
   test_IsThirteenWithin();
+  test_IsThirteenPrime();
+  test_IsThirteenTheNewBlack();
   printf("All good! Happy Thirteening\n");
 }
