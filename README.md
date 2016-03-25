@@ -1,13 +1,16 @@
-# IsThirteen C implementation.
+# IsThirteen C Library.
+
+Original project:
 
 https://github.com/jezen/is-thirteen
 
 ## Build:
 
-```./configure```
-
-```make```
+```
+$ ./configure
+$ make
+```
 
 ## Install
 
-```make install```
+`$ make install`
