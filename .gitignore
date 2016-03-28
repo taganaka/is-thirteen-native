@@ -7,8 +7,6 @@ config.log
 config.status
 configure.scan
 coverage_report
-depcomp
-libtool
 m4
 stamp-h1
 *~
