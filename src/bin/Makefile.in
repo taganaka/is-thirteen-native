@@ -286,7 +286,7 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-AM_CFLAGS = -I$(top_srcdir)/src/bin -I$(top_srcdir)/src/lib
+AM_CFLAGS = -I$(top_srcdir)/src/bin -I$(top_srcdir)/src/lib -std=c99 -Wall
 isthirteen_test_SOURCES = main.c
 isthirteen_test_LDADD = $(top_builddir)/src/lib/libisthirteen.la $(AM_LDFLAGS)
 all: all-am

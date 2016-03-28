@@ -1,3 +1,4 @@
+AM_CFLAGS = -std=c99 -Wall
 lib_LTLIBRARIES = libisthirteen.la
 include_HEADERS = isthirteen.h isthirteen_strings.h
 
